@@ -108,7 +108,43 @@
 
 	<!-- content -->
 	<div class="mypage">
-	    <p>RIME 主頁： <a href="http://code.google.com/p/rimeime/" target="_blank" rel="external">http://code.google.com/p/rimeime/</a></p>
+	    <p>RIME 主葉：<a href="https://rimeime.github.io" target="_blank" rel="external">https://rimeime.github.io</a></p>
+<h2 id="鼠鬚管_0-9-26-1_">鼠鬚管 0.9.26.1 <2014-12-22></2014-12-22></h2>
+<hr>
+<p><strong>註意：</strong></p>
+<p>這是一個過渡版本，會將已有的用戶詞典升級爲新的格式，而舊式的用戶詞典（<code>*.userdb.kct</code>）今後將不再支持。<br>爲保證完成過渡，從 0.9.26 版本以後鼠鬚管將啓用新的推送更新頻道，如果需要繼續接收推送，請勿跳過本次升級。</p>
+<p>——真的想直接升級到後續版本…<br>——請在升級安裝前，手動執行一次用戶數據同步，並在升級安裝後再將數據同步到新生的用戶詞典。</p>
+<hr>
+<p>下載：<a href="http://dl.bintray.com/lotem/rime/Squirrel-0.9.26.1.zip" target="_blank" rel="external">Bintray</a> | <a href="http://pan.baidu.com/s/1nPYAM" target="_blank" rel="external">百度雲分享鏈接</a><br>sha1: d6efabbaf4f16f7ecdf9b588e6bfdf81d06d51c1</p>
+<p>【鼠鬚管】變更集</p>
+<ul>
+<li>修復：在 Java 程序（如 IntelliJ IDEA）中不能輸入的問題</li>
+<li>修復：<code>app_options:</code> 在 OS X 10.10 Yosemite 下無效的問題</li>
+</ul>
+<p>Rime 算法庫變更集</p>
+<ul>
+<li>變更：採用 LevelDB 格式的用戶詞典，舊的用戶詞典 <code>*.kct</code> 將在部署時升級</li>
+<li>優化：新的 <code>.bin</code> 固態詞典結構，可節省 20% ~ 50% 空間</li>
+<li>新增：中文／西文半角標點切換</li>
+<li>改進：摺疊方案選單中的狀態切換選項以顯示更多方案，按空格鍵或選 2 展開選項</li>
+<li>改進：向左右移動光標後，回退鍵（BackSpace）用於刪除編碼字符而非撤銷選詞</li>
+<li>修復：【地球拼音】兼作聲調的「,」鍵在其他情況下未識別爲逗號</li>
+<li>修復：<code>affix_segmentor</code> 選擇部分匹配的候選詞後應使標籤繼續有效</li>
+<li>修復：OpenCC 配置文件及詞典缺失時輸入法崩潰</li>
+<li>新增：<code>cjk_minifier</code> 可用作 filter 過濾拼音輸入法中的罕用字</li>
+<li>新增：<code>single_char_filter</code> 使字型輸入法中的候選單字優先於詞組</li>
+<li>新增：匹配編碼並自動上屏，配置項 <code>speller/auto_select_pattern:</code></li>
+</ul>
+<p>【東風破】變更集</p>
+<ul>
+<li>新增：OpenCC 1.0 詞典及配置文件，提供繁→簡、簡→繁轉換及臺灣、香港用字標準</li>
+<li>新增：【拼音加加】雙拼方案，標識爲 <code>double_pinyin_pyjj</code></li>
+<li>新增：【朙月拼音】【倉頡五代】用 <code>/a</code>、/1` 輸入特殊字符、數字</li>
+<li>修復：【注音】省略聲調時，音節切分歧義處理不當</li>
+<li>優化：【宮保拼音】自動清除無效的按鍵組合</li>
+<li>優化：<code>symbols.yaml</code> 調整常用字符的順序</li>
+<li>更新：【八股文】【朙月拼音】【地球拼音】【粵拼】【中古漢語拼音】</li>
+</ul>
 <h2 id="鼠鬚管_0-9-25_">鼠鬚管 0.9.25 <2014-03-29></2014-03-29></h2>
 <p>Rime 算法庫變更集</p>
 <ul>
@@ -489,18 +525,6 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
-
-<script type="text/javascript">
-var disqus_shortname = 'rimeime';
-
-(function(){
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-}());
-</script>
 
 
 
