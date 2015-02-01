@@ -28,7 +28,7 @@
   
   <link rel="stylesheet" href="/css/bootstrap.flatly.min.css" media="screen" type="text/css">
   
-  <!-- <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css"> -->
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -192,6 +192,10 @@
   <h2 class="title">留言</h2>
 
   
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
 </section>
 
 
@@ -207,6 +211,12 @@
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
 	Aug 28 2013
+	</div>
+	<div>
+		<a href="/2013/08/28/spelling-algebra-debugger/#disqus_thread">
+			<i class="fa fa-comments"></i>
+			留言
+		</a>
 	</div>
 	
 
@@ -233,7 +243,7 @@
 	  </div>
     <footer> <!-- _partial/footer -->
 <p>
-  &copy; 2014 by 佛振@式恕堂
+  &copy; 2015 by 佛振@式恕堂
   &nbsp;
   <span class="text-muted">Powered by:
     <a class="text-muted" href="http://zespia.tw/hexo/" target="_blank">Hexo</a>,
@@ -254,6 +264,18 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/main.js"></script>
 
+
+<script type="text/javascript">
+var disqus_shortname = 'rimeime';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
 
 
 
