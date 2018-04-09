@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
 <channel>
-    <title>【小狼毫】輸入法測試頻道</title>
-    <link>http://rime.github.io/testing/weasel/appcast.xml</link>
-    <description>小狼毫測試版 Appcast 更新頻道</description>
+    <title>【小狼毫】輸入法測試頻道（僅更新至 0.11.0）</title>
+    <link>http://rimeime.github.io/weasel-update/pioneer/appcast.xml</link>
+    <description>小狼毫測試版 Appcast 更新頻道，爲舊版本升級到過渡版本並遷移用戶詞典</description>
     <language>zh</language>
     <item>
       <title>小狼毫 0.11.0</title>
