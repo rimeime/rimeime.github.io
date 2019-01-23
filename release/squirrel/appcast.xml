@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
-    <title>【鼠鬚管】輸入法更新頻道</title>
-    <link>https://rime.github.io/release/squirrel/appcast.xml</link>
-    <description>鼠鬚管 Appcast 更新頻道</description>
+    <title>【鼠鬚管】輸入法更新頻道（僅更新至 0.11.0）</title>
+    <link>https://rimeime.github.io/release/squirrel/appcast.xml</link>
+    <description>鼠鬚管 Appcast 更新頻道，爲舊版本升級到過渡版本</description>
     <language>zh</language>
     <item>
       <title>鼠鬚管 0.11.0</title>
-      <sparkle:releaseNotesLink>https://rime.github.io/release/squirrel/</sparkle:releaseNotesLink>
+      <sparkle:releaseNotesLink>https://rimeime.github.io/release/squirrel/</sparkle:releaseNotesLink>
       <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
       <pubDate>Wed, 23 Jan 2019 13:13:34 +0800</pubDate>
       <enclosure url="https://dl.bintray.com/rime/squirrel/Squirrel-0.11.0.zip"
